@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — .NET Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+<link href="/css/style.css" rel="stylesheet"></link>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">N<span>.</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#work" onclick="closeMenu()">Work</a></li>
+    <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-orb hero-orb-3"></div>
+
+  <div class="hero-badge">Open to new opportunities</div>
+  <div class="hero-avatar">👩🏻‍💻</div>
+
+  <h1 class="hero-quote">
+    Building things<br>that <span class="highlight">actually work.</span>
+  </h1>
+  <p class="hero-sub">Clean code, solid architecture, real results — one commit at a time.</p>
+
+  <div class="hero-intro">
+    <h2>I'm a .NET Developer <br><span>|</span></h2>
+    <p>A fresher .NET developer with ~1 year of hands-on experience building web applications using ASP.NET Core, SQL Server, and JavaScript. I enjoy solving real problems through clean, maintainable code and am eager to grow within a collaborative engineering team.</p>
+
+    <div class="skills-row">
+      <span class="skill-tag">ASP.NET Core</span>
+      <span class="skill-tag">C#</span>
+      <span class="skill-tag">SQL Server</span>
+      <span class="skill-tag">Entity Framework</span>
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">REST API</span>
+      <span class="skill-tag">HTML/CSS</span>
+      <span class="skill-tag">Git</span>
+    </div>
+  </div>
+</div>
+
+<!-- WORK EXPERIENCE -->
+<section id="work" class="reveal">
+  <p class="section-label">Career</p>
+  <h2 class="section-title">Work Experience</h2>
+
+  <div class="work-grid">
+    <div class="work-card">
+      <div class="work-icon a">🏢</div>
+      <div class="work-info">
+        <h4>Junior .NET Developer</h4>
+        <p>Developed and maintained internal web applications using ASP.NET Core MVC and SQL Server. Collaborated with senior devs on feature delivery and bug fixing.</p>
+        <span class="work-tag">2024 — Present · Full-time</span>
+      </div>
+    </div>
+    <div class="work-card">
+      <div class="work-icon b">🎓</div>
+      <div class="work-info">
+        <h4>Intern .NET Developer</h4>
+        <p>Built CRUD APIs with ASP.NET Core Web API, wrote stored procedures in SQL Server, and integrated basic front-end with JavaScript and Bootstrap.</p>
+        <span class="work-tag">2023 · Internship</span>
+      </div>
+    </div>
+    <div class="work-card">
+      <div class="work-icon c">📚</div>
+      <div class="work-info">
+        <h4>Bachelor of IT — University</h4>
+        <p>Graduated with a focus on software engineering. Final thesis: a hospital appointment management system built with ASP.NET Core and SQL Server.</p>
+        <span class="work-tag">2020 — 2024</span>
+      </div>
+    </div>
+    <div class="work-card">
+      <div class="work-icon d">🏆</div>
+      <div class="work-info">
+        <h4>Coursework & Certifications</h4>
+        <p>Completed courses in C# OOP, Entity Framework Core, RESTful API design, and Git version control. Self-studied clean architecture patterns.</p>
+        <span class="work-tag">Ongoing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEEKING BAND -->
+<div class="seeking-band reveal">
+  <p>I'm currently looking to join a <strong>product-driven team</strong> where I can grow as a .NET developer, contribute to real-world systems, and learn from experienced engineers in an agile environment.</p>
+  <div class="social-icons">
+    <a class="devicon-dotnetcore-plain colored" href="#" title=" .NET Core"></a>
+    <a class="devicon-csharp-plain colored" href="#" title="C#"></a>
+    <a class="devicon-javascript-plain colored" href="#" title="JavaScript"></a>
+    <a class="devicon-microsoftsqlserver-plain colored" href="#" title="SQL Server"></a>
+  </div>
+</div>
+
+<!-- ORBIT -->
+<div class="orbit-section">
+  <div class="orbit-wrap">
+    <div class="orbit-glow"></div>
+    <div class="orbit-ring orbit-ring-1"></div>
+    <div class="orbit-ring orbit-ring-2">
+      <div class="orbit-dot orbit-dot-sm"></div>
+    </div>
+    <div class="orbit-ring orbit-ring-3">
+      <div class="orbit-dot orbit-dot-sm" style="background:var(--pink);box-shadow:0 0 8px var(--pink)"></div>
+    </div>
+    <div class="orbit-center">.N</div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<section id="projects" class="reveal">
+  <p class="section-label">Selected Work</p>
+  <h2 class="section-title">Featured Projects</h2>
+
+  <div class="projects-list">
+
+    <div class="project-card reveal">
+      <div class="project-info">
+        <p class="project-num">Project 01</p>
+        <h3>Hospital Appointment System</h3>
+        <p>A full-stack web app for managing patient appointments, doctor schedules, and medical records. Built with ASP.NET Core MVC, Entity Framework Core, SQL Server, and Bootstrap. Features role-based auth with ASP.NET Identity.</p>
+        <div class="project-links">
+          <a class="project-link" title="GitHub">↗</a>
+          <a class="project-link" title="Live Demo">🔗</a>
+        </div>
+      </div>
+      <div class="project-preview">
+        <div class="project-preview-inner">
+          <div class="preview-mockup">
+            <div class="mockup-bar short accent"></div>
+            <div class="mockup-bar long" style="margin:10px 0"></div>
+            <div class="mockup-bar medium"></div>
+            <div class="mockup-bar short" style="margin-top:10px"></div>
+            <div class="mockup-bar long"></div>
+            <div class="mockup-bar medium" style="margin-top:8px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal" style="direction:rtl">
+      <div class="project-info" style="direction:ltr">
+        <p class="project-num">Project 02</p>
+        <h3>E-Commerce REST API</h3>
+        <p>A RESTful Web API for an e-commerce platform handling products, orders, and user accounts. Built with ASP.NET Core Web API, JWT authentication, SQL Server, and Swagger documentation. Includes unit tests with xUnit.</p>
+        <div class="project-links">
+          <a class="project-link" title="GitHub">↗</a>
+          <a class="project-link" title="Swagger">🔗</a>
+        </div>
+      </div>
+      <div class="project-preview" style="direction:ltr">
+        <div class="project-preview-inner">
+          <div class="preview-mockup">
+            <div class="mockup-bar medium accent"></div>
+            <div class="mockup-bar short" style="margin:10px 0"></div>
+            <div class="mockup-bar long"></div>
+            <div class="mockup-bar medium" style="margin-top:10px"></div>
+            <div class="mockup-bar short"></div>
+            <div class="mockup-bar long" style="margin-top:8px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-info">
+        <p class="project-num">Project 03</p>
+        <h3>Task Management Dashboard</h3>
+        <p>A Kanban-style task tracker with real-time updates using SignalR. Frontend built with HTML, CSS, and vanilla JavaScript. Backend powered by ASP.NET Core with SQL Server and stored procedures for reporting.</p>
+        <div class="project-links">
+          <a class="project-link" title="GitHub">↗</a>
+          <a class="project-link" title="Live Demo">🔗</a>
+        </div>
+      </div>
+      <div class="project-preview">
+        <div class="project-preview-inner">
+          <div class="preview-mockup">
+            <div class="mockup-bar long accent"></div>
+            <div class="mockup-bar medium" style="margin:10px 0"></div>
+            <div class="mockup-bar short"></div>
+            <div class="mockup-bar long" style="margin-top:10px"></div>
+            <div class="mockup-bar medium"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section reveal">
+  <p class="section-label">Get In Touch</p>
+  <h2 class="section-title">Contact</h2>
+  <p>I'm currently open to full-time .NET Developer positions. If you have a role that fits or just want to connect, feel free to reach out — I'd love to chat!</p>
+  <a href="mailto:yourname@email.com" class="contact-email">yourname@email.com</a>
+
+  <div class="social-icons">
+    <a class="social-icon" href="#" title="Github"><i class="fa-brands fa-github"></i></a>
+    <a class="social-icon" href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a class="social-icon" href="#" title="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+    <a class="social-icon" href="#" title="Email"><i class="fa-regular fa-envelope"></i></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Built with ❤️ and lots of C# &mdash; <span id="year"></span></p>
+</footer>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
